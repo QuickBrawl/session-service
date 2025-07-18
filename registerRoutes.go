@@ -12,4 +12,5 @@ func registerRoutes(app *fiber.App) {
 
 func registerSessionRoutes(group fiber.Router) {
 	group.Get("/register", handles.CreateSession)
+	group.Post("/join", handles.JoinSession)
 }
